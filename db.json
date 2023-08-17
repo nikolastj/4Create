@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "ae8cfe5b-8c27-4e15-b04e-af8a90e58b1e",
+      "username": "john_doe",
+      "firstName": "John",
+      "lastName": "Doe",
+      "gender": "male",
+      "dateOfBirth": "1990-01-15",
+      "email": "john@example.com",
+      "active": true
+    },
+    {
+      "id": "c4f201d0-e4b6-4da3-9b79-97166e792e0d",
+      "username": "jane_smith",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "gender": "female",
+      "dateOfBirth": "1985-07-22",
+      "email": "jane@example.com",
+      "active": true
+    },
+    {
+      "id": "ad8c0f20-53e7-4d8b-9be6-5f1b43ef78eb",
+      "username": "emily_williams",
+      "firstName": "Emily",
+      "lastName": "Williams",
+      "gender": "female",
+      "dateOfBirth": "1995-11-03",
+      "email": "emily@example.com",
+      "active": true
+    }
+  ]
+}

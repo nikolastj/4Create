@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+.main-layout {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  height: calc(100% - 60px);
+  width: 100%;
+  background-color: $transparent-bckg;
+  overflow-y: auto;
+}

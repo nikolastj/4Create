@@ -1,0 +1,25 @@
+@import "../../../styles/variables.scss";
+
+:host ::ng-deep .delete-button {
+
+  height: 32px;
+  width: 32px;
+  box-shadow: none;
+  background-color: $grey-1;
+
+  mat-icon {
+    color: white;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span {
+    display: none;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+}

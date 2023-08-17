@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.mat-mdc-unelevated-button:disabled {
+  color: lighten($grey-2, 70%) !important;
+}
+
+.mat-mdc-unelevated-button:disabled {
+  background-color: lighten($grey-2, 60%) !important;
+}
+
+.mat-mdc-text-field-wrapper {
+  border-radius: 5px !important;
+}
+
+.mat-mdc-unelevated-button:not(:disabled){
+  background-color: #019ac0 !important;
+}
