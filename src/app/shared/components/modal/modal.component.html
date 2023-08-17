@@ -1,0 +1,16 @@
+<div *ngIf="modalData" class="four-create-modal-wrapper pb-3">
+    <div class="modal-header px-3">
+        <div class="header-content ps-2 truncate">
+            <h3>{{header}}</h3>
+        </div>
+        <button id="exit-btn" type="button" class="btn btn-light" (click)="cancelClicked()">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <ng-container *ngIf="htmlContent">
+            <ng-container *ngTemplateOutlet="htmlContent"></ng-container>
+        </ng-container>
+    </div>
+</div>

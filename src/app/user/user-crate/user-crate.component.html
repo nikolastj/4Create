@@ -1,0 +1,25 @@
+<form [formGroup]="userForm" class="user-form-container d-flex flex-column py-2 w-100">
+
+    <mat-form-field appearance="fill">
+        <mat-label>First name</mat-label>
+        <input matInput placeholder="First name" [formControl]="userForm.firstName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Last name</mat-label>
+        <input matInput placeholder="Last name" [formControl]="userForm.lastName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Username" [formControl]="userForm.username" required>
+        <mat-error *ngIf="userForm.get('username').hasError('usernameAlreadyExists')">
+            Username already <strong>exists</strong>
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" [formControl]="userForm.email" required email>
+    </mat-form-field>
+
+    <button mat-flat-button disabled="{{!userForm.valid}}" (click)="submitUser()" class="submit-button"
+        type="submit">Create user</button>
+</form>
